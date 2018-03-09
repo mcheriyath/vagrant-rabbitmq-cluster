@@ -1,6 +1,6 @@
 ---
 - name: rabbitmq_ha_config | install rabbitMQ admin
-  shell: wget http://guest:guest@localhost:55672/cli/rabbitmqadmin
+  shell: wget http://guest:guest@localhost:15672/cli/rabbitmqadmin
 
 - name: rabbitmq_ha_config | moving the rabbitMQ Admin
   shell: mv rabbitmqadmin /usr/sbin
