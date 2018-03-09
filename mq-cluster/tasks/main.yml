@@ -13,4 +13,4 @@
   when: config_rabbitmq_ha and enable_rabbitmq_clustering
 
 - include: rabbitmq_user_config.yml
-  when: "'mq1' in inventory_hostname"
+  when: ansible_hostname == "{{ rabbitmq_master }}"
