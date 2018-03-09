@@ -10,7 +10,7 @@ BOXES = [
   { name: :mq1, ip: '10.10.1.101', },
   { name: :mq2, ip: '10.10.1.102', },
   { name: :mq3, ip: '10.10.1.103', },
-  { name: :mq3, ip: '10.10.1.104', },
+  { name: :mq4, ip: '10.10.1.104', },
 ]
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
