@@ -1,14 +1,14 @@
 [all]
-mq1
-mq2
-mq3
-mq4
+mq1 ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file=/Users/cheriyath/.vagrant.d/insecure_private_key ansible_python_interpreter=/usr/bin/python3
+mq2 ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file=/Users/cheriyath/.vagrant.d/insecure_private_key ansible_python_interpreter=/usr/bin/python3
+mq3 ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file=/Users/cheriyath/.vagrant.d/insecure_private_key ansible_python_interpreter=/usr/bin/python3
+mq4 ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file=/Users/cheriyath/.vagrant.d/insecure_private_key ansible_python_interpreter=/usr/bin/python3
 
 [rabbidz]
-mq1 rabbitmq_cluster_master=mq2
-mq2 rabbitmq_cluster_master=mq2
-mq3 rabbitmq_cluster_master=mq3
-mq4 rabbitmq_cluster_master=mq3
+mq1 rabbitmq_cluster_master=mq2 ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file=/Users/cheriyath/.vagrant.d/insecure_private_key ansible_python_interpreter=/usr/bin/python3
+mq2 rabbitmq_cluster_master=mq2 ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file=/Users/cheriyath/.vagrant.d/insecure_private_key ansible_python_interpreter=/usr/bin/python3
+mq3 rabbitmq_cluster_master=mq3 ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file=/Users/cheriyath/.vagrant.d/insecure_private_key ansible_python_interpreter=/usr/bin/python3
+mq4 rabbitmq_cluster_master=mq3 ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file=/Users/cheriyath/.vagrant.d/insecure_private_key ansible_python_interpreter=/usr/bin/python3
 
 [rabbidz:vars]
 rabbitmq_create_cluster=yes
