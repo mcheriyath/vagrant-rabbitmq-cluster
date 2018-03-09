@@ -4,6 +4,7 @@
     pattern: ""
     tags:
       ha-mode: all
+      ha-sync-mode: automatic
     priority: 1
 
 - name: "Deleting RabbitMQ User guest"
