@@ -1,0 +1,17 @@
+- name: ensure the default vhost contains the HA policy via a dict
+  rabbitmq_policy:
+    name: HA
+    pattern: .*
+  args:
+    tags:
+      ha-mode: all
+
+- rabbitmq_user:
+    user: alfred
+    password: "{{ rabbitmq_admin_password  }}"
+    permissions:
+      - vhost: /
+        configure_priv: .*
+        read_priv: .*
+        write_priv: .*
+    state: present
