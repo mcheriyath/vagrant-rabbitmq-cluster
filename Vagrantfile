@@ -14,7 +14,7 @@ BOXES = [
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.insert_key = false
-  config.vm.box = 'ubuntu/trusty64'
+  config.vm.box = 'ubuntu/xenial64'
   config.ssh.private_key_path = "~/.vagrant.d/insecure_private_key"
   config.ssh.forward_agent = true
 
